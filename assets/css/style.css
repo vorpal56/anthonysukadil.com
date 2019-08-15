@@ -249,6 +249,18 @@ header.contact .main-container .header2 {
 	
 }
 /* ====================== Parallax/Fixed Gradient Background ====================== */
+.img404 {
+    /* The image used */
+    background: url("../images/backgrounds/404.jpg");
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-blend-mode: darken;
+    width:100%;
+    /* Full height */
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    
+    background-size: cover;
+}
 .gradient{
 	width: calc(100% + 17px); height:100vh; min-height:500px;max-height:100%;
 }
@@ -294,6 +306,19 @@ header.contact .main-container .header2 {
     flex-shrink: 0;
     transition: 1.8s ease-in-out transform;
     backface-visibility: hidden;
+}
+.img404 {
+	background-repeat: no-repeat !important;
+    background-size: cover !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    display: inline-block;
+    width: 100vw;
+	height: 100vh; 
+	min-height:600px;   
+	flex-shrink: 0;
+	backface-visibility: hidden;
 }
 .slide::before {
     content: '';

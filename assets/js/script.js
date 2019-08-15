@@ -85,6 +85,7 @@ $(document).ready(function () {
             $(this).css({ backgroundPosition: coords });
         });
     };
+
     solid();
     reveal();
     parallax();
