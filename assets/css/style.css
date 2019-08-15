@@ -1,5 +1,5 @@
 /* ====================== Top Level Changes ====================== */
-body {
+body, html {
 	font-family: 'Helvetica','proximanova', sans-serif;
 	overflow-x:hidden;
 	 /* height: 100%; */
@@ -110,6 +110,11 @@ a {
 	text-decoration: none;
 	-webkit-transition-duration: 0.4s; /* Safari */
 	transition-duration: 0.4s;
+}
+.download {
+    width: 70% !important;
+    margin-left:15% !important;
+    margin-bottom: 2rem;
 }
 .nav-item {
     text-align: right;
@@ -421,18 +426,16 @@ div.content-left{
 /* ====================== Slide Down Animation END ====================== */
 /* ====================== Page Dividers and Sections ====================== */
 #about, #my_work, #documents, #contact {
-	background-color: #272727;
-	/* margin-top: -66px;
-	padding-top: 66px; */
-	font-size: 36px;
-	text-align:center;
-	color:white;
+	background-color: transparent;
+	margin-top: -66px;
+	padding-top: 66px;
 }
 .lead {
 	padding-left:20px; 
 	padding-top:10px;
 	padding-bottom:20px;
 }
+
 /* ====================== Page Dividers and Sections END ====================== */
 /* ====================== Bootstrap Overrides ====================== */
 /* .col-sm-2 {
