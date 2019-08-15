@@ -461,6 +461,10 @@ div.content-left{
 	h3.heading-left {
 		font-size:40px;
 	}
+	.row .col-sm-6.box-shadow{
+		flex: 0 0 46.295%;
+		max-width: 46.295%;
+	}
 }
  
 @media (min-width : 768px) {
@@ -496,6 +500,7 @@ div.content-left{
 	justify-content:center;
 }
 .card-img-top {
+	padding-top:15px;
 	width:17em;
 }
 .card-button {
@@ -545,9 +550,14 @@ div.content-left{
 	margin-bottom:-20px;
 	text-align: center;
 }
-
+.row .box-shadow {
+	margin-right:10px;
+	margin-left:10px;
+	margin-bottom:20px;
+	text-align:center;
+	padding-bottom:20px;
+}
 .col-md-4.col-sm-6.col-xs-12 {
-	margin-bottom:-20px;
 	text-align: center;
 }
 .marketing h2 {
@@ -607,6 +617,16 @@ h2.team, p.team, svg.team {
 	}
 	.background .row.img2 {
 		padding-top:24rem;
+	}
+	.row .col-md-4.box-shadow{
+		flex: 0 0 30%;
+		max-width: 30%;
+	}
+}
+@media (min-width:990px) {
+	.row .col-md-4.box-shadow{
+		flex: 0 0 31.251%;
+		max-width: 31.251%;
 	}
 }
 @media (min-width: 1200px) {
