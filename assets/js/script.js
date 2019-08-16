@@ -48,14 +48,14 @@ $(document).ready(function () {
     }
     function solid() {
         if ($(this).scrollTop() > headerH * 0.90) {
-            $('.button-clear').addClass('solid');
+            $('.button-dark').addClass('solid');
             $('.navbar').addClass('solid');
             $('.button-link').addClass('solid');
             $('.navbar-brand').addClass('solid');
             $('.navbar').removeClass('navbar-dark')
             $('.navbar').addClass('navbar-light')
         } else {
-            $('.button-clear').removeClass('solid');
+            $('.button-dark').removeClass('solid');
             $('.navbar').removeClass('solid');
             $('.button-link').removeClass('solid');
             $('.navbar-brand').removeClass('solid');

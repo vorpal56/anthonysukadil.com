@@ -59,6 +59,26 @@ a {
 	filter: invert(1);
 	font-weight:normal !important ; 
 }
+.button-dark {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.button-dark:hover {
+    background-color: white;
+    color: black;
+    text-decoration: none
+}
+.button-dark.solid {
+	color: black;
+    border: 2px solid #272727;
+}
+.button-dark.solid:hover {
+	color:white;
+	border:2px solid #272727;
+	background-color:#272727;
+}
 .button-clear.solid,
 .button-submit {
 	border: 2px solid #272727;
@@ -111,7 +131,7 @@ a {
 .download {
     width: 70% !important;
     margin-left:15% !important;
-    margin-bottom: 2rem;
+    margin-bottom: 1.4rem;
 }
 .nav-item {
     text-align: right;
@@ -143,6 +163,10 @@ a {
 	height:30vmin; 
 	min-width: 220px; 
 	min-height: 220px;
+}
+footer {
+	background-color:#272727; 
+	padding-top:16px;
 }
 header, section {
 	position:relative;
