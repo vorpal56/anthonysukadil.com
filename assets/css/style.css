@@ -1,6 +1,7 @@
 /* ====================== Top Level Changes ====================== */
 body, html {
-	font-family: 'Helvetica','proximanova', sans-serif;
+	/*font-family: 'Helvetica','proximanova', sans-serif;*/
+	font-family: 'proximanova','Helvetica', sans-serif;
 	overflow-x:hidden;
 	scroll-behavior: smooth !important;
 }
@@ -550,11 +551,22 @@ h2.team, p.team, svg.team {
 		flex: 0 0 30%;
 		max-width: 30%;
 	}
+	.card-img-top {
+		padding-top:8rem;
+	}
 }
-@media (min-width:990px) {
+@media (min-width:992px) {
 	.row .col-md-4.box-shadow{
 		flex: 0 0 31.251%;
 		max-width: 31.251%;
+	}
+	.card-img-top {
+		padding-top:3rem;
+	}
+}
+@media (min-width:1200px) {
+	.card-img-top {
+		padding-top:30px;
 	}
 }
 .bd-placeholder-img {
