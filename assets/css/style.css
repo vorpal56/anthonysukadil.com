@@ -2,7 +2,7 @@
 body, html {
 	font-family: 'Helvetica','proximanova', sans-serif;
 	overflow-x:hidden;
-	 scroll-behavior: smooth !important;
+	scroll-behavior: smooth !important;
 }
 @font-face {
 	font-family: 'proximanova';
@@ -11,7 +11,7 @@ body, html {
 	 font-weight: normal;
 	 font-style: normal;
 }
-svg, h2, p, .header1, .header2 {
+svg, .header1, .header2 {
 	opacity: 0
 }
 h2 {
@@ -317,63 +317,75 @@ div.content-left{
 
 @keyframes slideDown {
 	from {
-		top: -30px;
 		opacity: 0;
+		-webkit-transform: translate3d(0, -50px, 0);
+    	transform: translate3d(0, -50px, 0);
 	}
 	to {
-		top: 0px;
 		opacity: 1;
+		-webkit-transform: none;
+    	transform: none;
 	}
 }
 @-webkit-keyframes slideDown {
 	from {
-		top: -30px;
+		-webkit-transform: translate3d(0, -50px, 0);
+    	transform: translate3d(0, -50px, 0);
 		opacity: 0;
 	}
 	to {
-		top: 0px;
 		opacity: 1;
+		-webkit-transform: none;
+    	transform: none;
 	}
 }
 
 @keyframes slideLeft {
 	from {
-		left: -80px;
+		-webkit-transform: translate3d(-50px, 0, 0);
+    	transform: translate3d(-50px, 0, 0);
 		opacity: 0;
 	}
 	to {
-		left: 0px;
 		opacity: 1;
+		-webkit-transform: none;
+    	transform: none;
 	}
 }
 @-webkit-keyframes slideLeft {
 	from {
-		left: -80px;
+		-webkit-transform: translate3d(-50px, 0, 0);
+    	transform: translate3d(-50px, 0, 0);
 		opacity: 0;
 	}
 	to {
-		left: 0px;
 		opacity: 1;
+		-webkit-transform: none;
+    	transform: none;
 	}
 }
 @keyframes slideRight {
 	from {
-		right: -80px;
+		-webkit-transform: translate3d(50px, 0, 0);
+    	transform: translate3d(50px, 0, 0);
 		opacity: 0;
 	}
 	to {
-		right: 0px;
 		opacity: 1;
+		-webkit-transform: none;
+    	transform: none;
 	}
 }
 @-webkit-keyframes slideRight {
 	from {
-		right: -80px;
+		-webkit-transform: translate3d(50px, 0, 0);
+    	transform: translate3d(50px, 0, 0);
 		opacity: 0;
 	}
 	to {
-		right: 0px;
 		opacity: 1;
+		-webkit-transform: none;
+    	transform: none;
 	}
 }
 /* ====================== Slide Down Animation END ====================== */
@@ -443,7 +455,14 @@ div.content-left{
 	padding-top:15px;
 	width:17em;
 }
-/* Important part */
+/* .card-img-top:hover {
+	-webkit-transform: scale(1.07,1.05);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1.07,1.05);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;   
+} */
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */

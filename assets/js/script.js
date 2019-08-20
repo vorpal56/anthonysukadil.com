@@ -27,7 +27,7 @@ $(document).ready(function () {
         var objectOffsetTop = objectOffset.top;
         if (!(obj.hasClass("animated-right") && obj.hasClass("animated-left") && obj.hasClass("animated-down"))) {
             if (windowScrollPosBottom >= objectOffsetTop + 10) {
-                obj.animate({ "opacity": 1 }, 200, function () {
+                obj.animate({ "opacity": 1 }, 250, function () {
                     deferred.resolve();
                 }).addClass("animated-" + direction);
             }

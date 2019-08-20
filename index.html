@@ -23,10 +23,10 @@
 			<div class="slide slide3"></div>
 			<div class="slide slide4"></div>
 		</div>
-		<div class="main-container" id="fade-in">
+		<div class="main-container">
 			<img class="logo" src="assets/images/icons/as/aswhitemed.png"><br><br><br>
-			<span id="down" class="text-image1 header1">Anthony Sukadil</span>
-			<span id="down" class="text-image2 header2">Full Stack Developer</span>
+			<span class="text-image1 header1">Anthony Sukadil</span>
+			<span class="text-image2 header2">Full Stack Developer</span>
 		</div>
 		<nav class="navbar navbar-expand-md navbar-dark fixed-top">
 			<a class="navbar-brand" href="#">
@@ -61,11 +61,11 @@
 			<hr class="featurette-divider">
 			<div id="left" class="text-image1 row featurette box-shadow">
 				<div style="text-align:center" class="col-md-5 order-md-2">
-					<img id="left" class="text-image1 card-img-top bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" src="assets/images/icons/defaultwhite.png" alt="Card image cap">
+					<img class="card-img-top bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" src="assets/images/icons/defaultwhite.png" alt="Card image cap">
 				</div>
-				<div class="col-md-7">
-					<h2 id="left" class="text-image2 featurette-heading order-md-1">About Me</h2>
-					<p id="left" class="text-image2 lead">I'm a Full Stack Developer going into 4th year studying Computer Science at Wilfrid Laurier University with a focus in Data Science. I love reading about health-related issues, their solutions,
+				<div id="left" style="opacity:0" class="col-md-7 text-image2">
+					<h2 class="featurette-heading order-md-1">About Me</h2>
+					<p class="lead">I'm a Full Stack Developer going into 4th year studying Computer Science at Wilfrid Laurier University with a focus in Data Science. I love reading about health-related issues, their solutions,
 						and helping others make more informed decisions.
 						Topics such as diabetes, hypertension, obesity, fasting, atherosclerosis,
 						and most importantly, the impact that nutrition has in fighting these diseases.</p>
@@ -74,11 +74,11 @@
 			<hr class="featurette-divider">
 			<div id="right" class="text-image1 row featurette box-shadow">
 				<div style="text-align:center" class="col-md-5 order-md-1">
-					<img id="right" class="text-image1 rounded-circle card-img-top bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" src="assets/images/icons/fullstack-blue-grad.png" alt="Card image cap">
+					<img class="rounded-circle card-img-top bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" src="assets/images/icons/fullstack-blue-grad.png" alt="Card image cap">
 				</div>
-				<div class="col-md-7 order-md-2">
-					<h2 id="right" class="text-image2 featurette-heading">Development</h2>
-					<p id="right" class="text-image2 lead">Main stacks include Django, MERN, and LAMP. The Django stack - Python, Django, JavaScript, and MySQL - are the main languages I've used to deploy applications and run scripts. I've worked with MERN and LAMP stacks and I have a strong understanding of their fundamentals.
+				<div id="right" style="opacity:0" class="col-md-7 order-md-2 text-image2">
+					<h2 class="featurette-heading">Development</h2>
+					<p class="lead">Main stacks include Django, MERN, and LAMP. The Django stack - Python, Django, JavaScript, and MySQL - are the main languages I've used to deploy applications and run scripts. I've worked with MERN and LAMP stacks and I have a strong understanding of their fundamentals.
 						Older projects were built using VB as object-based games and VBA as file processing scripts to retrieve insights and automate tasks.</p>
 				</div>
 			</div>
@@ -87,9 +87,9 @@
 				<div style="text-align:center" class="col-md-5 order-md-2">
 					<img id="left" class="text-image1 card-img-top bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" src="assets/images/icons/leafgreen-clear-grad.png" alt="Card image cap">
 				</div>
-				<div class="col-md-7 order-md-1">
-					<h2 id="left" class="text-image2 featurette-heading">My Passions</h2>
-					<p id="left" class="text-image2 lead">I love reading about health-related issues, their solutions,
+				<div id="left" style="opacity:0" class="col-md-7 order-md-1 text-image2">
+					<h2 class="featurette-heading">My Passions</h2>
+					<p class="lead">I love reading about health-related issues, their solutions,
 						and helping others make more informed decisions.
 						Topics such as diabetes, hypertension, obesity, fasting, atherosclerosis,
 						and most importantly, the impact that nutrition has in fighting these diseases.</p>
@@ -106,53 +106,65 @@
 			</div>
 			<div class="row">
 				<div class="col-md-4 col-xs-12 text-image1 box-shadow">
-					<img class="text-image1 card-img-top bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" src="assets/images/sections/code.png" alt="Card image cap">
-					<h2 class="text-image1 ">Product Similarity Matcher</h2>
-					<p class="text-image1 ">Uses BigCommerce data and predicts parent products from products with variant names within.
+					<a href="#">
+						<img class="card-img-top bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" src="assets/images/sections/code.png" alt="Card image cap">
+					</a>
+					<h2>Product Similarity Matcher</h2>
+					<p>Uses BigCommerce data and predicts parent products from products with variant names within.
 						Uses Levenshtein distance, department categories and subcategories, and price distribution as similarity measures.</p>
 					<a class="button button-submit" href="https://github.com/vorpal56/ICS4U1" target="_blank" role="button">View on GitHub &longrightarrow;</a>
 				</div>
 				<div class="col-md-4 col-xs-12 text-image2 box-shadow">
-					<img class="text-image2 card-img-top bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" src="assets/images/sections/clustering.png" alt="Card image cap">
-					<h2 class="text-image2 ">Tweet-Clustering Analysis</h2>
-					<p class="text-image2 ">
+					<a href="https://github.com/vorpal56/Tweet-Clustering">
+						<img class="card-img-top bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" src="assets/images/sections/clustering.png" alt="Card image cap">
+					</a>
+					<h2>Tweet-Clustering Analysis</h2>
+					<p>
 						Grabs tweets from political leaders and analyzes the similarities of tweets
 						by using common clustering techniques such as K-Means and LDA.</p>
-					<a class="button button-submit" href="https://github.com/vorpal56/ICS4U1" target="_blank" role="button">View on GitHub &longrightarrow;</a>
+					<a class="button button-submit" href="https://github.com/vorpal56/Tweet-Clustering" target="_blank" role="button">View on GitHub &longrightarrow;</a>
 				</div>
 				<div class="col-md-4 col-xs-12 text-image3 box-shadow">
-					<img class="text-image3 card-img-top bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" src="assets/images/sections/laze.png" alt="Card image cap">
-					<h2 class="text-image3">Laze</h2>
-					<p class="text-image3">Short term Software Engineering project where users can place pins and indicate useful
+					<a href="https://github.com/lauriercp317/laze">
+						<img class="card-img-top bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" src="assets/images/sections/laze.png" alt="Card image cap">
+					</a>
+					<h2>Laze</h2>
+					<p>Short term Software Engineering project where users can place pins and indicate useful
 						information such as traffic, availability, and general information of points of interest including the library, gym, local stores,
 						vendors and so on near campus. </p>
-					<a class="button button-submit" href="https://github.com/vorpal56/ICS4U1" target="_blank" role="button">View on GitHub &longrightarrow;</a>
+					<a class="button button-submit" href="https://github.com/lauriercp317/laze" target="_blank" role="button">View on GitHub &longrightarrow;</a>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-4 col-xs-12 text-image1 box-shadow">
-					<img class="text-image1 card-img-top bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" src="assets/images/sections/studentgrades.png" alt="Card image cap">
-					<h2 class="text-image1 ">Student Grades</h2>
-					<p class="text-image1 ">Application using VBA allowing students, grades, and courses to be imported and stored.
+					<a href="https://github.com/vorpal56/StudentGrades">
+						<img class="card-img-top bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" src="assets/images/sections/studentgrades.png" alt="Card image cap">
+					</a>
+					<h2>Student Grades</h2>
+					<p>Application using VBA allowing students, grades, and courses to be imported and stored.
 						Data can be analyzed in order to create charts and reports for the user.</p>
-					<a class="button button-submit" href="https://github.com/vorpal56/ICS4U1" target="_blank" role="button">View on GitHub &longrightarrow;</a>
+					<a class="button button-submit" href="https://github.com/vorpal56/StudentGrades" target="_blank" role="button">View on GitHub &longrightarrow;</a>
 				</div>
 				<div class="col-md-4 col-xs-12 text-image2 box-shadow">
-					<img class="text-image2 card-img-top bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" src="assets/images/sections/exiled.png" alt="Card image cap">
-					<h2 class="text-image2 ">Exiled</h2>
-					<p class="text-image2 ">
-						Exiled is a longer puzzle game that challenges your
-						ability to memorize layouts and make precise movements to get to the end point.
-						It gets pretty tough as you go along!</p>
-					<a class="button button-submit" href="https://github.com/vorpal56/ICS4U1" target="_blank" role="button">View on GitHub &longrightarrow;</a>
-				</div>
-				<div class="col-md-4 col-xs-12 text-image3 box-shadow">
-					<img class="text-image3 card-img-top bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" src="assets/images/sections/b.png" alt="Card image cap">
-					<h2 class="text-image3">B²</h2>
-					<p class="text-image3">B² is a short puzzle game where the player starts from one tile
+					<a href="https://github.com/vorpal56/ICS4U1">
+						<img class="card-img-top bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" src="assets/images/sections/b.png" alt="Card image cap">
+					</a>
+					<h2>B²</h2>
+					<p>B² is a short puzzle game where the player starts from one tile
 						and gets to the red tile by clearing all the tiles.
 						Tile properties differ based on colour and can make or break your route.</p>
 					<a class="button button-submit" href="https://github.com/vorpal56/ICS4U1" target="_blank" role="button">View on GitHub &longrightarrow;</a>
+				</div>
+				<div class="col-md-4 col-xs-12 text-image3 box-shadow">
+					<a href="https://github.com/vorpal56/ICS3U1">
+						<img class="card-img-top bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" src="assets/images/sections/exiled.png" alt="Card image cap">
+					</a>
+					<h2>Exiled</h2>
+					<p>
+						Exiled is a longer puzzle game that challenges your
+						ability to memorize layouts and make precise movements to get to the end point.
+						It gets pretty tough as you go along!</p>
+					<a class="button button-submit" href="https://github.com/vorpal56/ICS3U1" target="_blank" role="button">View on GitHub &longrightarrow;</a>
 				</div>
 			</div>
 		</div>
@@ -182,20 +194,18 @@
 			</div>
 			<div class="text-image2 row" style="opacity:0">
 				<label style="font-size:24px; margin:auto; margin-bottom:15px;" class="col-form-label">Have any questions? Want to chat about something? Send me an email and let's talk.</label>
-				<div class="col-sm-8">
+				<div class="col-sm-8 order-sm-1">
 					<form class="gform" method="post" action="https://script.google.com/macros/s/AKfycbyZ3QfFMVqG34zXFvWeY-iPUjwKKIE1_M4QRmAoL-2Xye9EwLo/exec">
 						<div class="form-group">
 							<div class="row">
-								<label class="col-sm-6 col-form-label">First Name</label>
-								<label class="col-sm-6 col-form-label">Last Name</label>
-							</div>
-							<div class="row">
 								<div class="col-sm-6">
-									<input type="text" name="first" class="form-control" required="true" placeholder="John">
+									<label class="col-form-label">First Name</label>
+									<input type="text" name="first" class="form-control" required="true">
 								</div>
 								<!-- continue to the next if in this order -->
 								<div class="col-sm-6">
-									<input type="text" name="last" class="form-control" placeholder="Smith">
+									<label class="col-form-label">Last Name</label>
+									<input type="text" name="last" class="form-control">
 								</div>
 							</div>
 							<div class="row">
@@ -217,7 +227,7 @@
 						</div>
 					</form>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-4 order-sm-2">
 					<iframe class="resp-iframe" id="gmap_canvas" src="https://maps.google.com/maps?q=yonge%20and%20eglinton&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
 					</iframe>
 				</div>
