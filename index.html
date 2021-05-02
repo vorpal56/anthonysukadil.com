@@ -41,7 +41,7 @@
 						<a class="button-link" href="#about">About</a>
 					</li>
 					<li class="nav-item">
-						<a class="button-link" href="#my-work">My Work</a>
+						<a class="button-link" href="#projects">Projects</a>
 					</li>
 					<li class="nav-item">
 						<a class="button-link" href="#documents">Documents</a>
@@ -58,34 +58,34 @@
 		<div id="about"></div>
 		<div class="container marketing">
 			<hr class="featurette-divider">
-			<div id="left" class="text-image1 row featurette box-shadow">
-				<div style="text-align:center" class="col-md-4 order-md-2">
-					<img class="card-img-top bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" src="assets/images/icons/defaultwhite.png" alt="Card image cap">
+			<div id="left" class="text-left-grid text-image1 featurette box-shadow">
+				<div class="l-pic">
+					<img class="img-fluid mx-auto" style="max-width: 100%" src="assets/images/icons/defaultwhite.png" alt="Anthony Sukadil">
 				</div>
-				<div id="left" style="opacity:0" class="col-md-8 text-image2">
-					<h2 class="featurette-heading order-md-1">About Me</h2>
+				<div id="left" style="opacity:0" class="l-text text-image2">
+					<h2 class="featurette-heading">About Me</h2>
 					<p class="lead">I'm a Full Stack Developer with a degree in Computer Science. My background in development has helped me create many important applications in maintaining and accelerating businesses. During my time in highschool, I've had
 						little-to-no valuable techincal or programming experience. Over the years, I've been challenging myself to learn new technologies and analytical methods to better improve organizations and the lives of others.
 					</p>
 				</div>
 			</div>
 			<hr class="featurette-divider">
-			<div id="right" class="text-image1 row featurette box-shadow">
-				<div style="text-align:center" class="col-md-4 order-md-1">
-					<img class="card-img-top bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" src="assets/images/icons/fullstack-blue-grad.png" alt="Card image cap">
+			<div id="right" class="text-right-grid text-image1 featurette box-shadow">
+				<div class="r-pic">
+					<img class="img-fluid mx-auto" src="assets/images/icons/fullstack-blue-grad.png" alt="Development">
 				</div>
-				<div id="right" style="opacity:0" class="col-md-8 order-md-2 text-image2">
+				<div id="right" style="opacity:0" class="r-text text-image2">
 					<h2 class="featurette-heading">Development</h2>
 					<p class="lead">Main stacks include Flask, MEAN, and LAMP. The Flask stack - Python, Flask, JavaScript, MySQL, and MongoDB - are the main languages I've used to deploy applications on AWS and create scripts. I've worked with MEAN and LAMP
 						stacks and I have a strong understanding of their fundamentals. I've also worked with Tableau and CRM software to present valuable insights for management, supervisors, and many different departments.</p>
 				</div>
 			</div>
 			<hr class="featurette-divider">
-			<div id="left" class="text-image1 row featurette box-shadow">
-				<div style="text-align:center" class="col-md-4 order-md-2">
-					<img id="left" class="text-image1 card-img-top bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" src="assets/images/icons/leafgreen-clear-grad.png" alt="Card image cap">
+			<div id="left" class="text-left-grid text-image1 featurette box-shadow">
+				<div class="l-pic">
+					<img id="left" class="img-fluid mx-auto" src="assets/images/icons/leafgreen-clear-grad.png" alt="Health">
 				</div>
-				<div id="left" style="opacity:0" class="col-md-8 order-md-1 text-image2">
+				<div id="left" style="opacity:0" class="l-text text-image2">
 					<h2 class="featurette-heading">My Passions</h2>
 					<p class="lead">I believe that mindfulness and perspective is key to success in learning and developing long-lasting relationships. Through this, I became fascinated in the complexity of the human body from reading health-related issues,
 						their solutions, and helping others make more informed decisions. Topics such as diabetes, hypertension, obesity, fasting, atherosclerosis, and most importantly, the impact that nutrition has in fighting diseases and improving mental
@@ -95,16 +95,16 @@
 			<!-- /END THE FEATURETTES -->
 		</div><!-- /.container -->
 		<!-- My WORDK SECTION -->
-		<div id="my-work"></div>
+		<div id="projects"></div>
 		<div class="container marketing">
 			<hr class="featurette-divider">
 			<div class="row text-center med-pad-bottom">
-				<h1 class="text-image1 section-headers">My Work</h1>
+				<h1 class="text-image1 section-headers">My Projects</h1>
 			</div>
-			<div class="row">
-				<div class="col-md-4 col-xs-12 text-image1 box-shadow">
+			<div class="projects-grid">
+				<div id="project-1" class="text-image1 box-shadow">
 					<a href="https://www.leaguetheorycrafter.com" target="_blank">
-						<img class="card-img-top bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" src="assets/images/sections/lol.png" alt="League Theory Crafter">
+						<img class="img-fluid mx-auto" src="assets/images/sections/lol.png" alt="League Theory Crafter">
 					</a>
 					<h2>League Theory Crafter</h2>
 					<p>Angular application for users to theory craft with League of Legends. Includes the item and rune system, ability leveling, damage calculations and much more.</p>
@@ -113,9 +113,9 @@
 						<a class="button button-submit" href="https://www.leaguetheorycrafter.com" target="_blank" role="button">View Live &longrightarrow;</a>
 					</div>
 				</div>
-				<div class="col-md-4 col-xs-12 text-image2 box-shadow">
+				<div id="project-2" class="text-image2 box-shadow">
 					<a href="https://github.com/meraki-analytics/lolstaticdata" target="_blank">
-						<img class="card-img-top bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" src="assets/images/sections/lolstaticdata.png" alt="LoL Static Data Resources">
+						<img class="img-fluid mx-auto" src="assets/images/sections/lolstaticdata.png" alt="LoL Static Data Resources">
 					</a>
 					<h2>LoL Static Data</h2>
 					<p>Open source project that extracts data from the League of Legends Wiki into accurate and complete resources for developers. Used to power the League Theory Crafter.</p>
@@ -124,9 +124,9 @@
 						<a class="button button-submit" href="http://cdn.merakianalytics.com/riot/lol/resources/latest/en-US/" target="_blank" role="button">View Live &longrightarrow;</a>
 					</div>
 				</div>
-				<div class="col-md-4 col-xs-12 text-image3 box-shadow">
+				<div id="project-3" class="text-image3 box-shadow">
 					<a href="https://vorpal56.github.io/fasting-journal" target="_blank">
-						<img class="card-img-top bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" src="assets/images/sections/fasting.png" alt="Fasting Journal">
+						<img class="img-fluid mx-auto" src="assets/images/sections/fasting.png" alt="Fasting Journal">
 					</a>
 					<h2>Fasting Journal</h2>
 					<p>React application documenting my week long water fast. Journal-like appearance with quick navigation links to pages and definitions for references.</p>

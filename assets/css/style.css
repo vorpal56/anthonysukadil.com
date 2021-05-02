@@ -38,6 +38,102 @@ label.contact-details {
 .repo-links > a.button:last-child {
 	margin-top:12px;
 }
+.flex-display {
+	display: flex;
+}
+.flex-center-vertical {
+	align-items: center;
+}
+.flex-center-horizontal {
+	justify-content: center
+}
+.text-left-grid, .text-right-grid {
+	display:grid;
+	grid-template-rows: auto;
+	grid-gap: 15px;
+	padding: 15px;
+}
+.l-pic, .r-pic,
+.l-text, .r-text {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.text-left-grid {
+	grid-template-columns: 2.8fr 1.2fr;
+	grid-template-areas: "l-text l-pic";
+}
+.l-pic {
+	grid-area: l-pic;
+}
+.l-text {
+	grid-area: l-text;
+	flex-direction: column;
+}
+.text-right-grid {
+	grid-template-columns: 1.2fr 2.8fr;
+	grid-template-areas: "r-pic r-text";
+}
+.r-pic {
+	grid-area: r-pic;
+}
+.r-text {
+	grid-area: r-text;
+	flex-direction: column;
+}
+.projects-grid {
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	grid-template-rows: auto;
+	grid-template-areas: "project-1 project-2 project-3";
+	grid-gap: 15px;
+}
+#project-1, #project-2, #project-3 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align:center;
+	padding: 20px;
+}
+#project-1 {
+	grid-area: project-1;
+}
+#project-2 {
+	grid-area: project-2
+}
+#project-3 {
+	grid-area: project-3
+}
+@media (max-width: 844px) {
+	.text-right-grid, .text-left-grid {
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: 180px auto;
+	}
+	.text-right-grid {
+		grid-template-areas: 
+		"r-pic" 
+		"r-text";
+	}
+	.r-pic, .l-pic {
+		align-items:initial;
+	}
+	.text-left-grid {
+		grid-template-areas: 
+		"l-pic"
+		"l-text";
+	}
+	.projects-grid {
+		grid-template-columns: auto;
+		grid-template-rows: repeat(3, auto);
+		grid-template-areas: 
+		"project-1"
+		"project-2"
+		"project-3";
+		/* grid-gap: 15px; */
+	}
+}
 /* ====================== Top Level Changes END ====================== */
 /* ====================== Button/Navbar Changes ====================== */
 .button,
@@ -429,7 +525,7 @@ div.content-left{
 }
 /* ====================== Slide Down Animation END ====================== */
 /* ====================== Page Dividers and Sections ====================== */
-#about, #documents, #my-work, #contact {
+#about, #documents, #projects, #contact {
 	background-color: transparent;
 	margin-top: -40px;
 	padding-top: 40px;
@@ -559,7 +655,6 @@ h2.team, p.team, svg.team {
 	font-weight: 300;
 	line-height: 1;
 	letter-spacing: -.05rem;
-	margin-top:1.5rem;
 }
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -573,12 +668,6 @@ h2.team, p.team, svg.team {
 
 	.featurette-heading {
 		font-size: 44px;
-		margin-top:1.5rem;
-	}
-}
-@media (min-width: 62em) {
-	.featurette-heading {
-		margin-top: 1.3rem;
 	}
 }
 @media (min-width: 768px) {
