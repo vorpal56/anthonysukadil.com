@@ -25,7 +25,19 @@ h2 {
 	position: relative;
 	padding: 10px 0px;
 }
-
+.med-pad-bottom {
+	padding-bottom: 2.5rem;
+}
+label.contact-details {
+	font-size:24px; 
+	margin:auto; 
+	margin-bottom:15px; 
+	text-align: center; 
+	max-width:650px;
+}
+.repo-links > a.button:last-child {
+	margin-top:12px;
+}
 /* ====================== Top Level Changes END ====================== */
 /* ====================== Button/Navbar Changes ====================== */
 .button,
@@ -150,12 +162,21 @@ a {
 .navbar-light .navbar-toggler {
 	border-color: rgba(0,0, 0, 0.8);
 }
-
 .navbar-dark .navbar-toggler-icon {
 	background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 .navbar-light .navbar-toggler-icon {
 	background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+li.nav-item > a.button {
+	padding: 4px 16px;
+	margin-left: 8px;
+} 
+button.button-submit + li.list-inline-item {
+	float:right;
+	text-align:right;
+	margin-right: 1.2rem;
+	margin-bottom:0.6rem;
 }
 /* ====================== Button/Navbar Changes END ====================== */
 /* ====================== Header/Footer Changes ====================== */
@@ -174,6 +195,23 @@ header, section {
 }
 header, footer {
 	font-family: 'proximanova', 'Helvetica', 'sans-serif'
+}
+li.github {
+	margin-left:20px;
+	margin-right: 1.2rem;
+	margin-bottom:0.6rem;
+}
+li.facebook, li.instagram {
+	margin-right: 1.2rem;
+}
+li.linkedin {
+	margin-right: 0.8rem; 
+	margin-bottom:1.2rem;
+}
+.anthony-cc {
+	text-align:center;
+	color:white; 
+	margin-bottom:12px;
 }
 .section-headers {
 	font-family:  Helvetica, sans-serif, Arial;
@@ -391,10 +429,10 @@ div.content-left{
 }
 /* ====================== Slide Down Animation END ====================== */
 /* ====================== Page Dividers and Sections ====================== */
-#about, #my_work, #documents, #contact {
+#about, #documents, #my-work, #contact {
 	background-color: transparent;
-	margin-top: -66px;
-	padding-top: 66px;
+	margin-top: -40px;
+	padding-top: 40px;
 }
 .lead {
 	padding-left:20px; 
@@ -552,7 +590,7 @@ h2.team, p.team, svg.team {
 		max-width: 30%;
 	}
 	.card-img-top {
-		padding-top:8rem;
+		padding:4rem 0;
 	}
 }
 @media (min-width:992px) {
@@ -561,12 +599,12 @@ h2.team, p.team, svg.team {
 		max-width: 31.251%;
 	}
 	.card-img-top {
-		padding-top:3rem;
+		padding:1.5rem 0;
 	}
 }
 @media (min-width:1200px) {
 	.card-img-top {
-		padding-top:30px;
+		padding-top: 12px 0px;
 	}
 }
 .bd-placeholder-img {
