@@ -60,7 +60,7 @@ label.contact-details {
 	align-items:center;
 }
 .text-left-grid {
-	grid-template-columns: 2.8fr 1.2fr;
+	grid-template-columns: 2.8fr minmax(100px, 240px);
 	grid-template-areas: "l-text l-pic";
 }
 .l-pic {
@@ -71,7 +71,7 @@ label.contact-details {
 	flex-direction: column;
 }
 .text-right-grid {
-	grid-template-columns: 1.2fr 2.8fr;
+	grid-template-columns: minmax(100px, 240px) 2.8fr;
 	grid-template-areas: "r-pic r-text";
 }
 .r-pic {
@@ -87,6 +87,10 @@ label.contact-details {
 	grid-template-rows: auto;
 	grid-template-areas: "project-1 project-2 project-3";
 	grid-gap: 15px;
+}
+.project-thumbnail {
+	max-width:450px;
+	width: 100%;
 }
 #project-1, #project-2, #project-3 {
 	display: flex;
@@ -131,7 +135,6 @@ label.contact-details {
 		"project-1"
 		"project-2"
 		"project-3";
-		/* grid-gap: 15px; */
 	}
 }
 /* ====================== Top Level Changes END ====================== */
