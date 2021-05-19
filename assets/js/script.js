@@ -1,6 +1,5 @@
 $(document).ready(function () {
 	var windowH = $(window).height();
-	var headerH = $("header").height();
 	var windowScrollPosTop = $(window).scrollTop();
 	var windowScrollPosBottom = windowH + windowScrollPosTop;
 	var debounce_timer;
@@ -47,7 +46,9 @@ $(document).ready(function () {
 		})
 	}
 	function solid() {
-		if ($(this).scrollTop() > headerH * 0.92) {
+		var headerH = $("header").height() + 4;
+		const headerFactor = headerH > 800 ? 0.93 : 0.92 // Factor is based off experimentation
+		if ($(this).scrollTop() > headerH * headerFactor) {
 			$('.button-dark').addClass('solid');
 			$('.navbar').addClass('solid');
 			$('.button-link').addClass('solid');
