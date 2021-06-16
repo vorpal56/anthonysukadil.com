@@ -1,4 +1,7 @@
 $(document).ready(function () {
+	var year = new Date().getFullYear()
+	document.getElementById("anthony-cc").innerHTML = year + " © Anthony Sukadil"
+
 	var windowH = $(window).height();
 	var windowScrollPosTop = $(window).scrollTop();
 	var windowScrollPosBottom = windowH + windowScrollPosTop;
