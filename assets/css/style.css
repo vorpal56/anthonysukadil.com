@@ -33,7 +33,7 @@ label.contact-details {
 	margin:auto; 
 	margin-bottom:15px; 
 	text-align: center; 
-	max-width:650px;
+	max-width:780px;
 }
 .repo-links > a.button:last-child {
 	margin-top:12px;
@@ -143,13 +143,13 @@ label.contact-details {
 .button-link.solid,
 .navbar-brand.solid,
 .button-link:after,
-.footer-link:after,
-.footer-img:hover,
+a.footer-img:hover,
+a.text-link:after,
 a {
 	-webkit-transition-duration: 0.4s; /* Safari */
 	transition-duration: 0.4s;
 }
-.footer-img:hover {
+a.footer-img:hover {
 	filter: invert(43%) sepia(80%) saturate(374%) hue-rotate(117deg) brightness(96%) contrast(94%);
 }
 .button {
@@ -196,11 +196,17 @@ a {
 	border: 2px solid #272727;
 }
 .button-link.solid, 
-.button-link.solid:hover {
+.button-link.solid:hover,
+a.text-link {
 	color: black;
 }
-.button-link,
-.footer-link {
+a.text-link {
+	display:inline-block;
+}
+a.text-link:hover {
+	text-decoration: none;
+}
+.button-link {
 	position: relative;
 	color: white;
 	display: inline-block;
@@ -209,21 +215,26 @@ a {
 .button-link {
 	padding: 8px 12px;
 }
-.button-link:hover,
-.footer-link:hover {
+.button-link:hover {
 	text-decoration: none;
 	color: white;
 }
 .button-link:after,
-.footer-link:after {	
+a.text-link:after {	
 	content: '';
 	display: block;
 	border-bottom: 3px solid #28c5a3;
 	width: 0;
 }
-.button-link:hover:after,
-.footer-link:hover:after { 
+a.text-link:after {
+	border-bottom: 3px solid #bbbbbb;
+	width: 100%;
+}
+.button-link:hover:after { 
 	width: 100%; 
+}
+a.text-link:hover:after {
+	border-bottom: 3px solid #28c5a3
 }
 .button-clear {
 	background-color: transparent;
@@ -295,17 +306,26 @@ header, section {
 header, footer {
 	font-family: 'proximanova', 'Helvetica', 'sans-serif'
 }
+footer > .container > div.footer-content-wrapper {
+	color:white;
+	text-align:center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.footer-margin {
+	margin-bottom: 1.2em
+}
 li.github {
 	margin-left:20px;
-	margin-right: 1.2rem;
-	margin-bottom:0.6rem;
+	margin-right: 1.2rem !important;
 }
 li.facebook, li.instagram {
-	margin-right: 1.2rem;
+	margin-right: 1.2rem !important;
 }
 li.linkedin {
-	margin-right: 0.8rem; 
-	margin-bottom:1.2rem;
+	margin-right: 0.8rem !important; 
 }
 .anthony-cc {
 	text-align:center;
@@ -325,10 +345,6 @@ li.linkedin {
 	left: 0;
 	width: 100%;
 	text-align: center;
-}
-.footer-heading {
-	margin-bottom:0.4em;
-	color:white;
 }
 .header1,
 .header2 {
@@ -537,6 +553,7 @@ div.content-left{
 	padding-left:20px; 
 	padding-top:10px;
 	padding-bottom:20px;
+	line-height: 1.35;
 }
 /* ====================== Page Dividers and Sections END ====================== */
 /* ====================== Bootstrap Overrides ====================== */
