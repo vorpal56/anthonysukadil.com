@@ -6,7 +6,7 @@
     var honeypot;
 
     var fields = Object.keys(elements).filter(function(k) {
-      if (elements[k].name === "honeypot") {
+      if (elements[k].name === "hp") {
         honeypot = elements[k].value;
         return false;
       }
@@ -47,8 +47,6 @@
     formData.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
     formData.formGoogleSend
       = form.dataset.email || ""; // no email by default
-
-    console.log(formData);
     return {data: formData, honeypot: honeypot};
   }
 
@@ -57,9 +55,8 @@
     var form = event.target;
     var formData = getFormData(form);
     var data = formData.data;
-
     // If a honeypot field is filled, assume it was done so by a spam bot.
-    if (formData.honeypot) {
+    if (formData.honeypot != "") {
       return false;
     }
 
@@ -73,14 +70,8 @@
         console.log(xhr.status, xhr.statusText);
         console.log(xhr.responseText);
         form.reset();
-        var formElements = form.querySelector(".form-elements")
-        if (formElements) {
-          formElements.style.display = "none"; // hide form
-        }
-        var thankYouMessage = form.querySelector(".thankyou_message");
-        if (thankYouMessage) {
-          thankYouMessage.style.display = "block";
-        }
+        var thankYouMessage = form.querySelector(".thanks-msg");
+				thankYouMessage.style.display = "flex";
         return;
     };
     // url encode form data for sending as post data
@@ -91,7 +82,6 @@
   }
   
   function loaded() {
-    console.log("Contact form submission handler loaded successfully.");
     // bind to the submit event of our form
     var forms = document.querySelectorAll("form.gform");
     for (var i = 0; i < forms.length; i++) {

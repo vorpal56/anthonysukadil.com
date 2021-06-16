@@ -177,12 +177,14 @@
 									<label class="col-form-label">Message</label>
 									<textarea name="message" cols="40" rows="5" class="form-control" placeholder="I'm interested in..."></textarea>
 								</div>
+								<input type="text" name="hp" style="display:none">
 							</div>
-							<input type="text" name="honeypot" style="display:none">
 						</div>
-						<button class="button button-submit" type="submit" href="#contact">Submit</button>
-						<div style="display:none" class="thankyou_message">
-							<label class="col-form-label">Thanks for the message! I'll get back to you soon!</label>
+						<div class="contact-submit-grid">
+							<button id="contact-submit" class="button button-submit" type="submit" href="#contact">Submit</button>
+							<div class="thanks-msg">
+								<label class="col-form-label">Thanks for the message! I'll get back to you soon!</label>
+							</div>	
 						</div>
 					</form>
 				</div>
@@ -191,7 +193,7 @@
 					</iframe>
 				</div>
 			</div>
-			<hr class="featurette-divider">
+			<hr class="featurette-divider" style="margin-top:1.2em">
 		</div>
 		</div>
 	</main>

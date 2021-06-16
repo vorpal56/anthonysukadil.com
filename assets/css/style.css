@@ -35,6 +35,22 @@ label.contact-details {
 	text-align: center; 
 	max-width:780px;
 }
+.contact-submit-grid {
+	display:grid;
+	margin-bottom: 1em;
+	grid-template-rows: auto;
+	grid-template-columns: auto 1fr;
+	grid-template-areas: "contact-submit thanks-msg";
+}
+#contact-submit {
+	grid-area: contact-submit;
+}
+.thanks-msg {
+	grid-area: thanks-msg;
+	display:none;
+	align-items:center;
+	justify-content: center;
+}
 .repo-links > a.button:last-child {
 	margin-top:12px;
 }
